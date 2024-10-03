@@ -999,3 +999,29 @@ flex-wrap: wrap;
     overflow-x: hidden;
   }
 }
+
+
+.no-results-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 50px;
+}
+
+.right{
+  height: 100%;
+}
+.no-results-title{
+  font-size: 26px;
+  font-weight: 500;
+  margin: 20px 0 10px;
+}
+
+.no-results-message{
+  color: #878787;
+    font-size: 20px;
+    margin-bottom: 8px;
+}

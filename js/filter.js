@@ -115,12 +115,18 @@ function updateDisplay(data) {
   const paginationContainer = document.querySelector(".pagination");
 
   if (data.length === 0) {
-    rightSection.innerHTML = "<div>No results found</div>";
+    rightSection.innerHTML = `
+      <div class="no-results-container">
+        <img src="assets/no-item-found.png" alt="No results found">
+        <div class="no-results-title">Sorry, no results found!</div>
+        <div class="no-results-message">Please check the spelling or try searching for something else.</div>
+      </div>`;
     paginationContainer.style.display = "none";
     return;
-  } else {
+} else {
     paginationContainer.style.display = "block";
-  }
+}
+
 
   currentPage = 1;
   const paginatedData = paginate(data);
