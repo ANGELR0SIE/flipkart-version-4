@@ -1,0 +1,111 @@
+/* Container Styling */
+#price-filter {
+  padding: 16px;
+  border-bottom: 1px solid #f0f0f0;
+  background-color: #fff;
+}
+
+/* Price Title Styling */
+.price-title {
+  display: flex;
+  justify-content: space-between;
+}
+.price-title span {
+  font-size: 13px;
+  font-weight: bold;
+  display: inline-block;
+}
+.clear-price{
+  display: inline-block;
+  position: relative;
+  right: 0;
+}
+
+/* Slider Container */
+.price-range-container {
+  height: 30px;
+  margin-top: 10px;
+  position: relative;
+   width: 236px;
+
+}
+
+/* Slider Line */
+.slider-line {
+  height: 5px;
+  background: #e0e0e0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  border-radius: 5px;
+background-color: #2874f0;
+}
+
+/* Left and Right Handle Position */
+.left-handle {
+  left: 0;
+  z-index: 2;
+}
+
+.right-handle {
+  right: 0;
+}
+
+/* Price Min/Max Values */
+.price-values {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.min-price,
+.max-price {
+  flex-grow: 2;
+}
+
+.min-price select,
+.max-price select {
+  width: 100%;
+  padding: 5px;
+  font-size: 13px;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  background-color: #fff;
+  appearance: none;
+}
+
+/* span {
+  margin: 0 8px;
+  color: #878787;
+} */
+
+
+
+/* Additional styles for filled area */
+.slider-line {
+  height: 5px;
+  background: #e0e0e0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  border-radius: 5px;
+}
+
+
+
+
+/* Blue area between handles */
+.slider-filled {
+  height: 5px;
+  background: #2874f0; /* Change to your desired blue color */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  z-index: 1; /* Ensure it appears above the slider line */
+}
+
