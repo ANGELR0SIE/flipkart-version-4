@@ -762,6 +762,35 @@ section {
   margin-top: -1px;
   padding-right: 10px;
 }
+
+.selected-filters{
+display: flex;
+flex-wrap: wrap;
+}
+
+.selected-filters span{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 12px;
+  background-color: #e0e0e0;
+  box-shadow: 0 2px 4px 0 hsla(0, 0%, 100%, .5);
+  border-radius: 3px;
+  margin: 2px 4px;
+  overflow: hidden;
+  transition: background-color .1s;
+  /* max-width: 100px; */
+  padding: 8px;
+  align-items: center;
+  max-height: 32px;
+  width: fit-content;
+}
+.remove-filter{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 .price {
   display: flex;
   flex-direction: column;
@@ -837,6 +866,9 @@ section {
   font-size: 12px;
   font-weight: 400;
   margin-bottom: 8px;
+}
+.icon{
+  cursor: pointer;
 }
 
 .footer-link {
@@ -953,13 +985,17 @@ section {
 
 @media (max-width: 978px) {
   .nav-bar-margin,
- .nav-bar ,.body-section {
+  .nav-bar,
+  .body-section {
     min-width: 100%;
   }
-  .nav-bar-margin{
+  .nav-bar-margin {
     padding: 0;
   }
-  .f-logo{
+  .f-logo {
     top: 10px;
+  }
+  body {
+    overflow-x: hidden;
   }
 }

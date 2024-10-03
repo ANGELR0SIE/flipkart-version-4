@@ -3,6 +3,8 @@ import { handleSort } from "./sorting.js";
 import { initializePagination } from "./pagination.js";
 import { createPriceRangeSection } from "./price-filter.js";
 
+import { updateSelectedFilters } from './filter.js';
+
 document.addEventListener("DOMContentLoaded", () => {
   let phoneData = [];
 

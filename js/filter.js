@@ -173,21 +173,46 @@ export function filterItems() {
   updateSelectedFilters();
 }
 
+// function clearAllFilters() {
+//   document
+//     .querySelectorAll('.filter-section input[type="checkbox"]')
+//     .forEach((checkbox) => {
+//       checkbox.checked = false;
+//     });
+
+//   clearPriceFilter(); 
+
+//   filteredData = applyFilters(originalData);
+//   updateDisplay(filteredData);
+//   updateSelectedFilters();
+// }
+
+
 function clearAllFilters() {
-  document
-    .querySelectorAll('.filter-section input[type="checkbox"]')
-    .forEach((checkbox) => {
+  const filterSections = document.querySelectorAll('.filter-section');
+  
+  filterSections.forEach(section => {
+    const checkboxes = section.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach((checkbox) => {
       checkbox.checked = false;
     });
+    
+    const clearButton = section.querySelector(".remove-items");
+    if (clearButton) {
+      clearButton.style.display = "none";
+    }
+  });
 
-  clearPriceFilter(); 
+  clearPriceFilter();
 
   filteredData = applyFilters(originalData);
   updateDisplay(filteredData);
   updateSelectedFilters();
 }
 
-function updateSelectedFilters() {
+
+
+export function updateSelectedFilters() {
   const selectedFiltersDiv = document.querySelector(".selected-filters");
   selectedFiltersDiv.innerHTML = "";
 
@@ -251,13 +276,25 @@ function removeFilter(filter) {
   filterItems();
 }
 
+// function updateClearButtonsVisibility() {
+//   document.querySelectorAll(".filter-section").forEach((section) => {
+//     const checkboxes = section.querySelectorAll('input[type="checkbox"]:checked');
+//     const clearButton = section.querySelector(".remove-items");
+//     clearButton.style.display = checkboxes.length > 0 ? "block" : "none";
+//   });
+// }
 function updateClearButtonsVisibility() {
   document.querySelectorAll(".filter-section").forEach((section) => {
     const checkboxes = section.querySelectorAll('input[type="checkbox"]:checked');
     const clearButton = section.querySelector(".remove-items");
-    clearButton.style.display = checkboxes.length > 0 ? "block" : "none";
+    
+    if (clearButton) {  // Check if clearButton is not null
+      clearButton.style.display = checkboxes.length > 0 ? "block" : "none";
+    }
   });
 }
+
+
 
 const clearPriceButton = document.querySelector("sec2-remove-items");
 if (clearPriceButton) {
