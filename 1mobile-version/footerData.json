@@ -1,0 +1,80 @@
+{
+  "sections": [
+    {
+      "title": "ABOUT",
+      "links": [
+        { "text": "Contact Us", "href": "" },
+        { "text": "About Us", "href": "" },
+        { "text": "Careers", "href": "" },
+        { "text": "Flipkart Stories", "href": "" },
+        { "text": "Press", "href": "" },
+        { "text": "Corporate Information", "href": "" }
+      ]
+    },
+    {
+      "title": "GROUP COMPANIES",
+      "links": [
+        { "text": "Myntra", "href": "" },
+        { "text": "Cleartrip", "href": "" },
+        { "text": "Shopsy", "href": "" }
+      ]
+    },
+    {
+      "title": "HELP",
+      "links": [
+        { "text": "Payments", "href": "" },
+        { "text": "Shipping", "href": "" },
+        { "text": "Cancellation & Returns", "href": "" },
+        { "text": "FAQ", "href": "" },
+        { "text": "Report Infringement", "href": "" }
+      ]
+    },
+    {
+      "title": "CONSUMER POLICY",
+      "links": [
+        { "text": "Cancellation & Returns", "href": "" },
+        { "text": "Terms Of Use", "href": "" },
+        { "text": "Security", "href": "" },
+        { "text": "Privacy", "href": "" },
+        { "text": "Sitemap", "href": "" },
+        { "text": "Grievance Redressal", "href": "" },
+        { "text": "EPR Compliance", "href": "" }
+      ]
+    }
+  ],
+  "address": {
+    "mailUs": [
+      "Flipkart Internet Private Limited,",
+      "Buildings Alyssa, Begonia &",
+      "Clove Embassy Tech Village,",
+      "Outer Ring Road, Devarabeesanahalli Village,",
+      "Bengaluru, 560103,",
+      "Karnataka, India"
+    ],
+    "registeredOffice": [
+      "Flipkart Internet Private Limited,",
+      "Buildings Alyssa, Begonia &",
+      "Clove Embassy Tech Village,",
+      "Outer Ring Road, Devarabeesanahalli Village,",
+      "Bengaluru, 560103,",
+      "Karnataka, India",
+      "CIN : U51109KA2012PTC066107",
+      "Telephone: 044-45614700 / 044-67415800"
+    ]
+  },
+  "social": [
+    { "href": "#", "icon": "assets/facebook.png", "alt": "Facebook" },
+    { "href": "#", "icon": "assets/x-twiter.png", "alt": "Twitter" },
+    { "href": "#", "icon": "assets/youtube.png", "alt": "YouTube" }
+  ],
+  "extras": {
+    "links": [
+      { "text": "Become a Seller", "href": "", "icon": "assets/seller.png", "alt": "Seller" },
+      { "text": "Advertise", "href": "", "icon": "assets/advertise.png", "alt": "Advertise" },
+      { "text": "Gift Cards", "href": "", "icon": "assets/gift.png", "alt": "Gift Cards" },
+      { "text": "Help Center", "href": "", "icon": "assets/help.png", "alt": "Help Center" }
+    ],
+    "footerLogo": "assets/visa.png",
+    "copyright": "© 2007-2024 Flipkart.com"
+  }
+}

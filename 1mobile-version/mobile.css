@@ -1,0 +1,355 @@
+.mobile-header {
+  display: none;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .left-sidebar {
+    display: none;
+  }
+
+  header {
+    display: none;
+  }
+  .sub-nav {
+    display: none;
+  }
+
+  .rightHead {
+    display: none;
+  }
+
+  .features {
+    display: none;
+  }
+
+  .mobile-logo img,
+  .mobile-search-icon img,
+  .mobile-cart-icon img {
+    height: 30px;
+  }
+
+  .mobile-filter-bar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+
+  .left-sidebar.visible,
+  .filter-bar.visible {
+    display: block !important;
+  }
+
+  .left-sidebar,
+  .filter-bar {
+    display: none;
+  }
+
+  .filter-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    z-index: 1000;
+  }
+
+  .overlay-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+
+  .filter-section {
+    margin-bottom: 20px; /* Spacing between sections */
+  }
+
+  .checkbox-item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0; /* Spacing between checkbox items */
+  }
+
+  .apply-button {
+    background-color: white; /* White background for the apply button */
+    color: black; /* Black text color */
+    border: 1px solid #ccc; /* Add a border if needed */
+    padding: 10px; /* Padding for button */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  .mobile-header {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffff;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .header-logo {
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 52px;
+    border-bottom: 1px #ddd solid;
+    align-items: center;
+  }
+
+  .back-icon {
+    height: 16px;
+    width: 19px;
+  }
+
+  .flipkart-logo {
+    width: 23px;
+    height: 23px !important;
+  }
+
+  .back-div {
+    width: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .filter-button {
+    border: none;
+    background-color: white;
+    border-left: 1px solid #ddd;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .filter-header,
+  .back-button {
+    width: 50%;
+  }
+  .filter-header {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    height: 52px;
+  }
+
+  .filter-header span {
+    padding-left: 12px;
+  }
+
+  .back-button {
+    width: 10px;
+  }
+
+  .apply-button {
+    background-color: orangered;
+  }
+
+  .sort-button {
+    border: none;
+    background-color: white;
+    border-right: 1px solid #ddd;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-buttons {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    background-color: #ffff;
+    height: 47.99px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .header-flex {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+  }
+  .header-flex span {
+    color: black;
+    width: 90px;
+    text-align: center;
+    font-size: 16px;
+  }
+  .header-flex img {
+    width: 42px;
+    /* height: 30px; */
+  }
+  .search-icon {
+    height: 30px !important;
+  }
+  .right {
+    margin-top: 100px;
+  }
+  .right-Section {
+    flex: 1 1 0%;
+    min-height: 154px;
+    width: 100%;
+    padding: 12px 0;
+    flex-flow: nowrap;
+  }
+
+  .image-div {
+    display: flex;
+    position: relative;
+    width: 96px;
+    height: 120px !important;
+  }
+
+  .img-rel {
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 6px;
+    margin-top: 16px;
+    height: 120px;
+    overflow: hidden;
+    width: fit-content;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+  }
+
+  .right-sec-div {
+    width: calc(100% - 96px);
+  }
+  .row-left,
+  .row-right {
+    width: 100%;
+  }
+  .row-left h2,
+  .curr-price {
+    font-size: 14px;
+  }
+
+  .heart,
+  .compare {
+    display: none;
+  }
+  .image-div img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    object-fit: contain;
+  }
+
+  .logo-back-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-back-container img {
+    margin-right: 10px;
+  }
+
+  .button-container {
+    display: flex;
+    gap: 10px;
+  }
+
+  .button-container button {
+    background-color: white;
+    color: #2874f0;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .filter-container {
+    display: flex;
+  }
+
+  .left-panel {
+    width: 30%;
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+  }
+
+  .right-panel {
+    width: 70%;
+    padding-left: 10px;
+  }
+
+  .filter-title {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .filter-title:hover {
+    background-color: #f0f0f0;
+  }
+
+  .checkbox-item {
+    margin: 5px 0;
+  }
+
+  .apply-button {
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+    color: #ffff;
+  }
+
+  .sort-overlay {
+    position: fixed;
+    left: 0;
+    background-color: white;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    padding-bottom: 24px;
+  }
+
+  .sort-overlay.show {
+    display: block;
+  }
+
+  .sort-overlay .back-button {
+    display: none;
+  }
+  .footer {
+    display: none;
+  }
+
+  .radio-item:first-child {
+    padding: 12px;
+    color: #878787;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  .radio-item:first-child input {
+    visibility: hidden;
+  }
+
+  .radio-item {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    margin-right: 8px;
+  }
+  .radio-item label {
+    padding: 6px 12px;
+  }
+}

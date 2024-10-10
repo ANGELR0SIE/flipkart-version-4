@@ -1,0 +1,112 @@
+{
+    "header": [{
+      "headerLogo": {
+        "icon": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png",
+        "text": {
+          "p": "Explore",
+          "span": "Plus"
+        },
+        "plusIcon": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png"
+      },
+      "searchBar": {
+        "placeholder": "Search for products, brands and more",
+        "icon": "assets/search-icon.svg"
+      },
+      "navLinks": {
+        "login": "Login",
+        "seller": "Become a Seller",
+        "more": {
+          "text": "More",
+          "icon": "assets/down-arrow.svg"
+        },
+        "cart": {
+          "icon": "assets/cart.svg",
+          "text": "Cart"
+        }
+      }
+    }],
+    
+    "subNav": [
+      { "text": "Electronics", "image": "assets/down-arrow.svg" },
+      { "text": "TVs & Appliances", "image": "assets/down-arrow.svg" },
+      { "text": "Men", "image": "assets/down-arrow.svg" },
+      { "text": "Women", "image": "assets/down-arrow.svg" },
+      { "text": "Baby & Kids", "image": "assets/down-arrow.svg" },
+      { "text": "Home & Furniture", "image": "assets/down-arrow.svg" },
+      { "text": "Sports, Books & More", "image": "assets/down-arrow.svg" },
+      { "text": "Flights", "image": "assets/down-arrow.svg" },
+      { "text": "Offer Zone", "image": "assets/down-arrow.svg" }
+    ],
+    
+    "leftSidebar":[ {
+      "categories": {
+        "head": "Filters",
+        "subHeader": "CATEGORIES",
+        "grayText": "Mobiles & Accessories",
+        "blackText": "Mobiles",
+        "icon": "assets/down-arrow.svg"
+      },
+      "sections": [
+        {
+          "title": "PRICE",
+          "min": ["min", "10000", "15000", "20000", "30000"],
+          "max": [ "10000", "15000", "20000", "30000", "30000+"]
+        },
+        {
+          "title": "BRAND",
+          "searchBar": {
+            "icon": "searchBarIcon.svg",
+            "placeholder": "Search Brand"
+          },
+          "options": ["SAMSUNG", "vivo", "OPPO", "realme", "POCO", "MOTOROLA"],
+          "more": "171 MORE"
+        },
+        {
+          "title": "CUSTOMER RATINGS",
+          "options": ["4★ & above", "3★ & above"],
+          "ids": ["4", "3"]
+        },
+        {
+          "title": "GST INVOICE AVAILABLE",
+          "options": ["GST Invoice Available"]
+        },
+        {
+          "title": "RAM",
+          "options": ["4 GB", "3 GB", "2 GB", "1 GB and Below", "8 GB and Above", "6 GB", "6 GB Above"],
+          "ids": ["4", "3", "2", "1+", "8+", "6", "6+"]
+        },
+        {
+          "title": "INTERNAL STORAGE",
+          "options": [
+            "256 GB & Above", "128 - 255.9 GB", "64 - 127.9 GB", "32 - 63.9 GB", 
+            "16 - 31.9 GB", "8 - 15.9 GB", "4 - 7.9 GB", "2 GB - 3.9 GB", 
+            "1 GB - 1.9 GB", "Less than 1 GB"
+          ]
+        }
+      ],
+      "fassured": {
+        "logo": "assets/fassured.png",
+        "question": "?"
+      }
+    }],
+    "right": {
+    "div1": [
+        {
+          "path": "Home > Mobiles & Appliances",
+          "result": "Showing 1 – 24 of 9,883 results for ",
+          "filters": [
+            { "text": "Sort By" },
+            { "text": "Relevance", "cls": "relevance" },
+            { "text": "Popularity", "cls": "popularity" },
+            { "text": "Price -- Low to High", "cls": "lowtoHigh" },
+            { "text": "Price -- High to Low", "cls": "highToLow" },
+            { "text": "Newest First", "cls": "newstFirst" }
+          ]
+        }
+      ]
+    }
+  }
+  
+
+
+

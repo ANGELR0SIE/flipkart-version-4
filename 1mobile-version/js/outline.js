@@ -3,7 +3,7 @@ import { handleSort } from "./sorting.js";
 import { initializePagination } from "./pagination.js";
 import { createPriceRangeSection } from "./price-filter.js";
 
-import { updateSelectedFilters } from "./filter.js";
+import { updateSelectedFilters } from './filter.js';
 
 document.addEventListener("DOMContentLoaded", () => {
   let phoneData = [];
@@ -46,11 +46,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function createHeader() {
     const navBarMargin = document.querySelector(".nav-bar-margin");
-
+  
     // Create the new wrapper div
     const headerWrapper = document.createElement("div");
     headerWrapper.className = "header-wrapper"; // You can style this as needed
-
+  
     flipkartData.header.forEach((item) => {
       const headerLogo = document.createElement("div");
       headerLogo.className = "header-logo";
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
       logoLink.appendChild(logoText);
       headerLogo.appendChild(logoImage);
       headerLogo.appendChild(logoLink);
-
+  
       const searchBar = document.createElement("div");
       searchBar.className = "header-search-bar";
       const searchbarInner = document.createElement("div");
@@ -83,21 +83,21 @@ document.addEventListener("DOMContentLoaded", () => {
       searchBg.appendChild(searchImg);
       searchbarInner.appendChild(searchBg);
       searchBar.appendChild(searchbarInner);
-
+  
       const login = document.createElement("div");
       login.className = "login";
       const loginLink = document.createElement("a");
       loginLink.className = "login-link wht-bg clr-bl";
       loginLink.innerHTML = item.navLinks.login;
       login.appendChild(loginLink);
-
+  
       const seller = document.createElement("div");
       seller.className = "seller";
       const sellerLink = document.createElement("a");
       sellerLink.className = "seller-link";
       sellerLink.innerHTML = item.navLinks.seller;
       seller.appendChild(sellerLink);
-
+  
       const more = document.createElement("div");
       more.className = "more";
       const moreLink = document.createElement("a");
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
       moreIcon.src = item.navLinks.more.icon;
       more.appendChild(moreLink);
       more.appendChild(moreIcon);
-
+  
       const cart = document.createElement("div");
       cart.className = "cart";
       const cartLink = document.createElement("a");
@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
       cartLink.appendChild(cartImg);
       cartLink.appendChild(cartSpan);
       cart.appendChild(cartLink);
-
+  
       // Append all elements to the wrapper div
       headerWrapper.appendChild(headerLogo);
       headerWrapper.appendChild(searchBar);
@@ -128,10 +128,11 @@ document.addEventListener("DOMContentLoaded", () => {
       headerWrapper.appendChild(more);
       headerWrapper.appendChild(cart);
     });
-
+  
     // Append the headerWrapper div inside the nav-bar-margin
     navBarMargin.appendChild(headerWrapper);
   }
+  
 
   function createSubNav() {
     const subnavBar = document.querySelector(".sub-nav-margin");
@@ -147,6 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
       subnavBar.appendChild(subNavItem);
     });
   }
+
 
   const createLeftSidebar = function () {
     const leftSidebar = document.querySelector(".left-sidebar");
@@ -199,7 +201,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const link1 = document.createElement("a");
     link1.className = "category-link";
     link1.title = categoriesData.grayText;
-    link1.href = "#";
+    link1.href = "#"; 
     link1.innerHTML = `
     <img src="${categoriesData.icon}" width="10" height="10" alt="icon" />
     ${categoriesData.grayText}
@@ -219,12 +221,15 @@ document.addEventListener("DOMContentLoaded", () => {
   `;
     categoryItem2.appendChild(link2);
 
+    // Append Items to Section and Category Container
     section.appendChild(categoryItem1);
     section.appendChild(categoryItem2);
     categoryContainer.appendChild(section);
 
+    // Append the Categories Section right below the filter header
     leftSidebar.appendChild(categoryContainer);
 
+    // Price Filter Section and other filters (appended after categories)
     const priceFilterSection = createPriceRangeSection();
     leftSidebar.appendChild(priceFilterSection);
 
@@ -325,6 +330,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     leftSidebar.appendChild(fassuredSection);
 
+    // Finally, append the left sidebar to the body section
     bodySection.appendChild(leftSidebar);
   };
 
@@ -375,3 +381,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const bodySection = document.querySelector(".body-section");
   }
 });
+
+
+
+
